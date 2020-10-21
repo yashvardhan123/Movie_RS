@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+:root {
+    --nav-font: 'Montserrat', sans-serif;
+    --background-gradient : (rgb(50, 50, 133) 2%, black 20%);
+    --searchBar-color: rgb(214, 77, 77);
+    --searchButton-color: rgb(0, 0, 0);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow-y: hidden; */
+}
+
+.trendingMovies {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    color: white;
+}
+
+.trendingCards {
+    border: 2px solid white;
+    height: auto;
+    text-align: center;
+}
+
+.trendingCards>img {
+    width: max-content;
+    max-height: 17rem;
+}
+.trendingCards>div{
+    text-align: center;
+    font-family: var(--nav-font);
+    font-size: 20px;
+}
+.trendingCards:hover {
+    background-color: rgb(254, 255, 189);
+    color: black;
+}
+
+#background {
+    background-image: linear-gradient(rgb(50, 50, 133) 2%, black 20%);
+    height: 110vh;
+}
+
+.nav {
+    text-align: center;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav>span {
+    color: white;
+    /* text-transform: capitalize; */
+    font-family: var(--nav-font);
+    font-size: 3em;
+    /* margin-right: 1rem; */
+}
+.nav>span:hover{
+    color: yellow;
+    border-bottom: 4px solid yellow;
+}
+
+.svgFlex {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: aquamarine; */
+}
+
+#stonksSVG {
+    margin-left: 2rem;
+    display: relative;
+}
+#stonksSVG>img{
+    margin-top: 4rem;
+}
+
+.movieForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    margin: 3rem auto 0 auto;
+    min-height: 3rem;
+    color: white;
+}
+
+#srchtxt {
+    min-height: 3rem;
+    padding-left: 2px;
+    width: 35rem;
+    color: black;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    border: 1px black solid;
+    /* background-color: var(rgb(253, 252, 252)); */
+}
+
+#srchtxt:focus {
+    border: 1px solid lime;
+}
+
+#srchtxt::placeholder {
+    /* color: black; */
+    letter-spacing: 2px;
+    font-size: 1.1em;
+    line-height: 1em;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#btn1 {
+    min-height: 3rem;
+    width: 8rem;
+    /* margin-left: 0.5rem; */
+    color: white;
+    border: 1px solid black;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--searchButton-color);
+}
+
+#btn1:hover {
+    cursor: pointer;
+    /* border: 3px solid yellow; */
+    background-color: rgb(254, 255, 189);
+    color: black;
+}
+
+/* .movieImgSrch {
+    height: 600px;
+    width: 100px;
+} */
