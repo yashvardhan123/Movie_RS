@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/assets/css/styles.css">
+    <title>Movie Recommendation</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div id="background">
+        <div class="nav">
+            <span><a href="/home?userName={{userName}}">Trending Movies</a></span>
+            <span>Mood</span>
+            <span>{% if userName == 'Login' %}<a href="/login">Login</a>
+                  {% else %}<a href="#">{{userName}}</a>
+                  {% endif %}
+            </span>
+            <span>
+                {% if userName != 'Login' %}
+                <a href="/" style="color: white;">
+                    Logout
+                </a>
+                {% endif %}
+            </span>
+        </div>
+        <!-- search bar flex box -->
+        <div class="svgFlex">
+            <!-- stonks svg -->
+            <div id="stonksSVG">
+                <img src="../static/assets/img/stonks.svg" alt="stonks">
+            </div>
+            <!-- Search Form -->
+            <form action="/search" method="GET" class="movieForm">
+                <!-- Search bar -->
+                <input type="search" id="srchtxt" placeholder="Search Movie" name="query">
+                <input type="text" name="userName" value="{{userName}}" style="display: none;">
+                <button type="submit" id="btn1">Search</button>
+            </form>
+            <!-- popcorn SVG -->
+            <div id="popcornSVG">
+                <img src="../static/assets/img/popcorn_movieTime.svg" alt="popcorn">
+            </div>
+        </div>
+        <div class="trendingMovies">
+            {% for i in range(0,4) %}
+            <div class="trendingCards">
+                <img src="https://image.tmdb.org/t/p/w300/{{movieName[i]['poster_path']}}">
+                <div><span>{{movieName[i]["original_title"]}}</span></div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>

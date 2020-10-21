@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../static/assets/css/login.css">
+	<title>Movie Recommendation</title>
+</head>
+
+<body>
+	<div class="container">
+		<div><img src="../static/assets/img/pencilStrokeL.svg"></div>
+		<div class="containerInner">
+			<div class="loginText"><span>LOGIN</span><br><span>{{error}}</span></div>
+			<form action="/login" method="POST" class="form">
+				<div class="inputField"><input type="text" name="username" placeholder="user name"></div>
+				<div class="inputField"><input type="password" name="password" placeholder="password"></div>
+				<div><button type="submit" value="submit">Login</div>
+				<p id="bottomText">Don't have an account?</p>
+				<a class="bottomLink" href="/signup" style="text-decoration:underline">Sign Up here</a>
+			</form>
+		</div>
+		<div><img src="../static/assets/img/pencilStrokeL.svg"></div>
+	</div>
+</body>
+</html>
