@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+:root {
+    --nav-font: 'Montserrat', sans-serif;
+    --background-gradient : rgb(50, 50, 133) 2%, black 20%;
+    --searchBar-color: rgb(253, 252, 252);
+    --searchButton-color: rgb(0, 0, 0);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(var(--background-gradient));
+}
+.container > div{
+    margin-top: 3rem;
+}
+.container > div > img{
+    width: 80%;
+}
+
+.containerInner{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    margin-top: 2rem;
+}
+.form input[type="password"], .form input[type="text"]{
+    margin-top: 0.5rem;
+    width: 60%;
+    height: 80%;
+    color: black;
+  }
+
+.inputField{
+    display: flex;
+    justify-content: center;
+}
+
+.inputField > input{
+    padding-left: 2px;
+}
+.inputField > input::placeholder{
+    /* text-transform: capitalize; */
+    font-size: 1rem;
+
+}
+.form > div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.form > div{
+    height: 3rem;
+}
+.form > div > button{
+    width: 25%;
+    color: black;
+    border: 1px solid black;
+    border-radius: 2rem;
+    letter-spacing: 3px;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: var(--nav-font);
+}
+.form > div > button:hover{
+    cursor: pointer;
+    background-color: yellow;
+    color: black;
+    border: none;
+}
+/* login text */
+.loginText{
+    color: white;
+    font-family: var(--nav-font);
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#bottomText{
+    font-size: 1.3em;
+}
+.bottomLink{
+    font-size: 1.3em;
+}
+.bottomLink:hover{
+    color: yellow;
+}
+input{
+    transition: background-color .7s;
+}
