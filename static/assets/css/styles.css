@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 :root {
     --nav-font: 'Montserrat', sans-serif;
-    --background-gradient : (rgb(50, 50, 133) 2%, black 20%);
+    --background-gradient : rgb(50, 50, 133) 2%, black 20%;
     --searchBar-color: rgb(214, 77, 77);
     --searchButton-color: rgb(0, 0, 0);
 }
@@ -10,6 +10,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     /* overflow-y: hidden; */
 }
 
@@ -41,7 +42,7 @@
 }
 
 #background {
-    background-image: linear-gradient(rgb(50, 50, 133) 2%, black 20%);
+    background-image: linear-gradient(var(--background-gradient));
     height: 110vh;
 }
 
@@ -132,3 +133,8 @@ a{
     background-color: rgb(254, 255, 189);
     color: black;
 }
+
+/* .movieImgSrch {
+    height: 600px;
+    width: 100px;
+} */
