@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/assets/css/moods.css">
+    <title>Movie Recommendationt</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="emojiSVG">
+            <img src="../static/assets/img/emoji.svg" alt="emoji">
+        </div>
+        <div class="grid">
+            <div class="row1">
+                <form action="/moods" method="POST">
+                    <input type="text" value="happy" name="mood">
+                    <input type="text" value="{{userName}}" name="userName">
+                    <button type="submit" class="button-moods">Happy</button>
+                </form>
+                <form action="/moods" method="POST">
+                    <input type="text" value="sad" name="mood">
+                    <input type="text" value="{{userName}}" name="userName">
+                    <button type="submit" class="button-moods">Sad</button>
+                </form>
+            </div>
+            <div class="row2">
+                <form action="/moods" method="POST">
+                    <input type="text" value="excited" name="mood">
+                    <input type="text" value="{{userName}}" name="userName">
+                    <button type="submit" class="button-moods">Excited</button>
+                </form>
+                <form action="/moods" method="POST">
+                    <input type="text" value="angry" name="mood">
+                    <input type="text" value="{{userName}}" name="userName">
+                    <button type="submit" class="button-moods">Angry</button>
+                </form>
+            </div>
+            <div class="row3">
+                <form action="/moods" method="POST">
+                    <input type="text" value="loving" name="mood">
+                    <input type="text" value="{{userName}}" name="userName">
+                    <button type="submit" class="button-moods">Loving</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
