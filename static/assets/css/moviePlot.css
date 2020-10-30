@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+:root {
+    --nav-font: "Montserrat", sans-serif;
+    --background-gradient: rgb(50, 50, 133) 2%, black 20%;
+    --searchBar-color: rgb(214, 77, 77);
+    --searchButton-color: rgb(0, 0, 0);
+    --imdb-color: rgb(27, 146, 27);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+body {
+    /* display: flex;
+    flex-direction: row; */
+    background-color: black;
+}
+.plotContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+    /* background-color: rgb(189, 90, 90); */
+    height: 30rem;
+}
+
+.leftPanel {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 3.5em;
+}
+
+.rightPanel {
+    margin-top: 3rem;
+    border: solid 2px white;
+    height: 315px;
+    width: 250px;
+    padding: 3px;
+    text-align: center;
+}
+.rightPanel > img {
+    width: 230px;
+    height: 300px;
+}
+#title {
+    /* margin-bottom: 1rem; */
+    text-align: center;
+}
+#title > span {
+    color: white;
+    font-family: var(--nav-font);
+    font-size: 2em;
+    font-weight: 900;
+}
+
+#plot > p {
+    line-height: 2em;
+    color: white;
+    font-family: var(--nav-font);
+    font-weight: 600;
+    font-size: 1.6em;
+    text-align: justify;
+}
+#relDate {
+    /* margin-bottom: 1rem; */
+    text-align: center;
+}
+#relDate {
+    color: white;
+    font-size: 2em;
+    font-family: var(--nav-font);
+    font-weight: 600;
+}
+#imdbRating {
+    width: 90%;
+    height: 14%;
+    background-color: var(--imdb-color);
+    text-align: center;
+    padding: 0.3em;
+}
+#imdbRating > span {
+    color: white;
+    font-size: 2.3em;
+    font-weight: 600;
+    font-family: var(--nav-font);
+}
+#background {
+    background-image: linear-gradient(var(--background-gradient));
+    height: 110vh;
+    /* height: 100%; */
+}

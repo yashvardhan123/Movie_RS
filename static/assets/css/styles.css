@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 :root {
-    --nav-font: 'Montserrat', sans-serif;
-    --background-gradient : rgb(50, 50, 133) 2%, black 20%;
+    --nav-font: "Montserrat", sans-serif;
+    --background-gradient: rgb(50, 50, 133) 2%, black 20%;
     --searchBar-color: rgb(214, 77, 77);
     --searchButton-color: rgb(0, 0, 0);
 }
@@ -27,11 +27,11 @@
     text-align: center;
 }
 
-.trendingCards>img {
+.trendingCards > a > img {
     width: max-content;
-    max-height: 17rem;
+    height: 17rem;
 }
-.trendingCards>div{
+.trendingCards > a > div {
     text-align: center;
     font-family: var(--nav-font);
     font-size: 20px;
@@ -44,6 +44,7 @@
 #background {
     background-image: linear-gradient(var(--background-gradient));
     height: 110vh;
+    /* height: 100%; */
 }
 
 .nav {
@@ -53,14 +54,14 @@
     justify-content: space-evenly;
 }
 
-.nav>span {
+.nav > span {
     color: white;
     /* text-transform: capitalize; */
     font-family: var(--nav-font);
     font-size: 3em;
     /* margin-right: 1rem; */
 }
-.nav>span:hover{
+.nav > span:hover {
     color: yellow;
     border-bottom: 4px solid yellow;
 }
@@ -75,7 +76,7 @@
     margin-left: 2rem;
     display: relative;
 }
-#stonksSVG>img{
+#stonksSVG > img {
     margin-top: 4rem;
 }
 
@@ -111,7 +112,7 @@
     line-height: 1em;
     text-align: center;
 }
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -123,7 +124,7 @@ a{
     border: 1px solid black;
     font-size: 2rem;
     letter-spacing: 2px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--searchButton-color);
 }
 
