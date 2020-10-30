@@ -26,6 +26,13 @@
                     <button type="submit" class="button-moods">Sad</button>
                 </form>
             </div>
+            <div class="row3">
+                <form action="/moods" method="POST">
+                    <input type="text" value="loving" name="mood">
+                    <input type="text" value="{{userName}}" name="userName">
+                    <button type="submit" class="button-moods">Loving</button>
+                </form>
+            </div>
             <div class="row2">
                 <form action="/moods" method="POST">
                     <input type="text" value="excited" name="mood">
@@ -38,13 +45,13 @@
                     <button type="submit" class="button-moods">Angry</button>
                 </form>
             </div>
-            <div class="row3">
+            <!-- <div class="row3">
                 <form action="/moods" method="POST">
                     <input type="text" value="loving" name="mood">
                     <input type="text" value="{{userName}}" name="userName">
                     <button type="submit" class="button-moods">Loving</button>
                 </form>
-            </div>
+            </div> -->
         </div>
     </div>
 </body>

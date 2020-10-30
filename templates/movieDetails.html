@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation</title>
+    <link rel="stylesheet" href="../static/assets/css/moviePlot.css">
+</head>
+
+<body>
+    <div class="plotContainer">
+        <div class="leftPanel">
+            <div id="title"><span>{{movieName[0]["original_title"]}}</span></div>
+            <div id="plot">
+                <p>
+                    {{movieName[0]["overview"]}}
+                </p>
+            </div>
+            <div id="relDate">
+                <span>Released On: {{movieName[0]["release_date"]}}</span>
+            </div>
+            <div id="imdbRating">
+                <span>IMDb Rating: {{movieName[0]["vote_average"]}}</span>
+            </div>
+        </div>
+        <div class="rightPanel">
+            <img src="https://image.tmdb.org/t/p/w300/{{movieName[0]['poster_path']}}">
+        </div>
+    </div>
+
+</body>
+
+</html>

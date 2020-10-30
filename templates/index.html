@@ -15,8 +15,8 @@
             <span><a href="/moods?userName={{userName}}">Moods</a></span>
             <!-- <span><a href="https://recommenders.herokuapp.com/" target="_blank">Recommended</a></span> -->
             <span>{% if userName == 'Login' %}<a href="/login">Login</a>
-                  {% else %}<a href="#">{{userName}}</a>
-                  {% endif %}
+                {% else %}<a href="#">{{userName}}</a>
+                {% endif %}
             </span>
             <span>
                 {% if userName != 'Login' %}
@@ -48,8 +48,10 @@
             {% for i in range(0,4) %}
             <!-- Trending Cards -->
             <div class="trendingCards">
-                <img src="https://image.tmdb.org/t/p/w300/{{movieName[i]['poster_path']}}">
-                <div><span>{{movieName[i]["original_title"]}}</span></div>
+                <a href="/moviePlot?movieName={{movieName[i]['original_title']}}" target="_blank">
+                    <img src="https://image.tmdb.org/t/p/w300/{{movieName[i]['poster_path']}}">
+                    <div><span>{{movieName[i]["original_title"]}}</span></div>
+                </a>
             </div>
             {% endfor %}
         </div>
